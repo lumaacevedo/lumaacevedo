@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .menu-area a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            background: midnightblue;
+            height: 50px;
+            text-decoration: none;
+        }
+
+        .menu-area a:hover {
+            background: orange;
+            color: #fff;
+
+        }
+
+        .menu-area ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .menu-area li {
+            position: relative;
+            width: 100%;
+            text-align: center;
+        }
+
+        .menu-area li:hover .dropdown-1>li {
+            top: 0;
+            display: block;
+        }
+
+        .dropdown-1 li {
+            display: none;
+            position: relative;
+        }
+
+        .dropdown-1 {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .dropdown-1 li:hover {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            CURSOS DISEÑO WEB
+        </h1>
+        <h2>
+            TEMA 3: ETIQUETAS SEMANTICAS, LISTAS Y ENLACES
+        </h2>
+
+
+    </header>
+    <nav class="menu-area">
+        <ul>
+            <li> <a href="index.html">Inicio</a> </li>
+            <li><a href="#">Temas</a>
+                <ul class="dropdown-1">
+                    <li><a href="temas1.html">tema1</a></li>
+                    <li><a href="temas2.html">tema 2</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Recursos</a>
+                <ul class="dropdown-1">
+                    <li> <a href="recurso1.html">Recurso 1</a> </li>
+                    <li><a href="recurso2.html">Recurso 2</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Aprendizaje</a>
+                <ul class="dropdown-1">
+                    <li> <a href="aprendizaje1.html">Aprendizaje 1</a> </li>
+                    <li><a href="cuestionario1.html">Reto 1</a></li>
+
+                    <li><a href="aprendizaje2.html">Aprendizaje 2</a></li>
+                    <li><a href="cuestionario2.html">Reto 2</a></li>
+
+
+                </ul>
+            </li>
+            <li><a href="autor.html">Autor</a></li>
+        </ul>
+    </nav>
+    <div class="contenedor">
+        <section>
+            <article>
+                <h1>TEMA 2: LISTAS Y ENLACES</h1>
+                <p> En la mayoría de los documentos HTML se usan listas para organizar el texto. El lenguaje HTML
+                    incorpora distintas formas de mostrar listas, por ejemplo con viñetas sencillas o también con letras
+                    o números. Además, para que las páginas tengan más vistosidad, se pueden colocar imágenes delante de
+                    cada párrafo.</p>
+
+                <h2>Tipos de listas</h2>
+                <h3>Listas ordenadas</h3>
+                <p>Si lo que pretendemos es definir una lista ordenada, lo tendremos que hacer entre las etiquetas ol
+                    (ol indica ordered list). Además, cada elemento de la lista se escribirá con la misma
+                    etiqueta que para las listas no ordenadas: li. Pero al ser listas ordenadas los símbolos por defecto
+                    serán números y éstos se irán generando automáticamente por orden, conforme escribamos nuevos
+                    elementos de la lista.</p>
+
+                <p> las listas ordenadas podemos hacer que el primer punto comience con el número que nosotros
+                    queramos. Lo conseguiremos gracias al atributo “value”. Los siguientes puntos que escribamos se
+                    generarán automáticamente por orden, partiendo de ese número.</p>
+
+                <p>Por ejemplo, si queremos que nuestra lista empiece por el número 20, podemos indicarlo en el código.
+                    Escribe este código en tu editor de texto y comprueba el resultado.</p>
+
+                <img src="img/listas_ordenadas.jpg">
+
+                <h3>Listas No ordenadas</h3>
+                <p>Las listas no ordenadas son aquellas que se encuentran entre las etiquetas
+                    ul (ul indica unordered list), etiqueta de apertura y cierre respectivamente. Si queremos
+                    añadir un nuevo punto, lo tendremos que hacer dentro de las etiquetas li.</p>
+
+                <p>Si no le indicamos nada a la etiqueta li, la viñeta o marca que indica que se trata de un elemento de
+                    una lista se generará de forma automática. Pero si queremos definir nosotros mismo el símbolo del
+                    punto o marca a emplear, debemos indicarlo específicamente. En el pasado se usaba el atributo
+                    “type”, hoy en día no recomendado (deprecated). Con este atributo se podía hacer que la lista
+                    estuviera definida por puntos negros (li type="disc"), por puntos con el fondo blanco (li
+                    type="circle") o por cuadrados (li type="square").</p>
+
+                <p> La sintaxis recomendada para indicar la apariencia se basa en usar CSS como indicamos a
+                    continuación:</p>
+
+                <img src="img/listas_no_ordenadas.jpg">
+
+                <h4>Ejemplo</h4>
+                <img src="img/listas_no_ordenadas2.jpg">
+
+
+                <h1>Bibligrafía</h1>
+
+                <p>González, E. (s. f.). Cómo obtener claves o contraseñas de redes wifi (cracking «a por naranjas») ¿Es
+                    segura una red inalámbrica? Aprender a programar. Recuperado 11 de abril de 2021, de
+                    https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=514:listas-html-listas-no-ordenadas-ul-ordenadas-ol-de-definiciones-tag-li-etiquetas-dl-dt-dd-cu00718b&catid=69&Itemid=192
+                </p>
+            </article>
+
+        </section>
+        <aside>
+            <iframe
+                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </aside>
+    </div>
+    <footer>
+        <p>
+            Creado por: Luisa Maria Acevedo Quintero
+            Proposito: Sulicitud de proyecto de clase UNAD
+        </p>
+    </footer>
+</body>
+
+</html>

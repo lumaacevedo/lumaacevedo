@@ -1,0 +1,30 @@
+header{
+    background-color: ivory;
+    padding: 20px;
+}
+nav{
+    background-color: midnightblue;
+    color: ivory;
+    padding: 10px;
+}
+section{
+    float: left;
+    width: 70%;
+    background-color: orange;
+}
+aside{
+    float: left;
+    width: 30%;
+    background-color: midnightblue;
+}
+footer{
+    background-color: ivory;
+    color: darkslategrey;
+    padding: 20px;
+}
+
+.contenedor::after{
+    content: "";
+    display: block;
+    clear: both;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .menu-area a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            background: midnightblue;
+            height: 50px;
+            text-decoration: none;
+        }
+
+        .menu-area a:hover {
+            background: orange;
+            color: #fff;
+
+        }
+
+        .menu-area ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .menu-area li {
+            position: relative;
+            width: 100%;
+            text-align: center;
+        }
+
+        .menu-area li:hover .dropdown-1>li {
+            top: 0;
+            display: block;
+        }
+
+        .dropdown-1 li {
+            display: none;
+            position: relative;
+        }
+
+        .dropdown-1 {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .dropdown-1 li:hover {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            CURSOS DISEÑO WEB
+        </h1>
+        <h2>
+            TEMA 3: ETIQUETAS SEMANTICAS, LISTAS Y ENLACES
+        </h2>
+
+
+    </header>
+    <nav class="menu-area">
+        <ul>
+            <li> <a href="index.html">Inicio</a> </li>
+            <li><a href="#">Temas</a>
+                <ul class="dropdown-1">
+                    <li><a href="temas1.html">tema1</a></li>
+                    <li><a href="temas2.html">tema 2</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Recursos</a>
+                <ul class="dropdown-1">
+                    <li> <a href="recurso1.html">Recurso 1</a> </li>
+                    <li><a href="recurso2.html">Recurso 2</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Aprendizaje</a>
+                <ul class="dropdown-1">
+                    <li> <a href="aprendizaje1.html">Aprendizaje 1</a> </li>
+                    <li><a href="#">Reto 1</a>
+                        <ul class="=dropdown-1">
+                            <li><a href="cuestionario1.html">Reto 1</a></li>
+                        </ul>
+                    </li>     
+                    <li><a href="aprendizaje2.html">Aprendizaje 2</a></li>
+                    <li><a href="#">Reto 2</a>
+                        <ul class="=dropdown-1">
+                            <li><a href="cuestionario1.html">Reto 2</a></li>
+                        </ul>
+                    </li>     
+                </ul>
+            </li>
+            <li><a href="autor.html">Autor</a></li>
+        </ul>
+    </nav>
+    <div class="contenedor">
+        <section>
+            <article>
+                <h1>APRENDIZAJE 1</h1>
+                
+            </article>
+
+        </section>
+        <aside>
+            <iframe
+                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </aside>
+    </div>
+    <footer>
+        <p>
+            Creado por: Luisa Maria Acevedo Quintero
+            Proposito: Solicitud de proyecto de clase UNAD
+        </p>
+    </footer>
+</body>
+
+</html>
